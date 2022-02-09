@@ -1,5 +1,7 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import ReactDom from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 // const element =React.createElement('h1',{className:'heading'},'Hello, world');
 // function Clock({local}){
@@ -13,16 +15,13 @@ import reactDom from 'react-dom';
 // reactDom.render(clock(), document.getElementById('root'));
 // reactDom.render(<Clock local='bn-BD'/>, document.getElementById('root'));
 
-class Clock extends React.Component{
-  render(){
-    return (
-        <h1 className='heading'>
-          Hello Worlds -{this.props.children}
-          <span>{new Date().toLocaleTimeString(this.props.local)}</span>
-        </h1>
-      );
-}
-}
+ // const clockCom = new Clock();
 
-// const clockCom = new Clock();
-reactDom.render(<Clock local='bn-BD'>text</Clock>, document.getElementById('root'));
+ ReactDom.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+ );
+
+ reportWebVitals();
