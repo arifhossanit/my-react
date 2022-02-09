@@ -2,18 +2,27 @@ import React from 'react';
 import reactDom from 'react-dom';
 
 // const element =React.createElement('h1',{className:'heading'},'Hello, world');
-const element=(
-<h1 className='heading'>
-  Hello Worlds
-</h1>
-  );
+// function Clock({local}){
+//   return (
+//     <h1 className='heading'>
+//       Hello Worlds <span>{new Date().toLocaleTimeString(local)}</span>
+//     </h1>
+//     );
+// }
 
-function getGreeting(user) {
-  if (user) {
-    return <h1>Hello, {user}!</h1>;
-  }
-  return <h1>Hello, stranger.</h1>;
+// reactDom.render(clock(), document.getElementById('root'));
+// reactDom.render(<Clock local='bn-BD'/>, document.getElementById('root'));
+
+class Clock extends React.Component{
+  render(){
+    return (
+        <h1 className='heading'>
+          Hello Worlds -{this.props.children}
+          <span>{new Date().toLocaleTimeString(this.props.local)}</span>
+        </h1>
+      );
 }
-const element2= <h1>Hello, {getGreeting('arif')}</h1>
-console.log(element2);
-reactDom.render(element, document.getElementById('root'));
+}
+
+// const clockCom = new Clock();
+reactDom.render(<Clock local='bn-BD'>text</Clock>, document.getElementById('root'));
