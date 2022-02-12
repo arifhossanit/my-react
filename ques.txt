@@ -1,0 +1,64 @@
+1.	Where we set database credentials?->b)config
+2.	Where we get log files in laravel?->d)Storage\logs
+3.	How can your validate your model?->c)$rules
+4.	How to create controller using artisan?->c)php artisan make:controller [ControllerName]
+5.	Which method is responsible for destroy a record in RESTful service?-> b) Delete
+6.	App directory consists of What?->c)Model, Controller, Middleware
+7.	What type of file is Form::file?-> c) Helper
+8.	Where is the routing file located in laravel?-> a) routes/
+9.	Which refers to the system of numbering pages-a list of numbered links?->b)Pagination
+10.	What is composer.json?->a)This file identifies the packages you like to integrate into your application
+11.	What is the role of middleware?->b)Process request and response*
+12.	How can we encoding and sterilizing cache in routes?->->a) php artisan route: cache
+13.	What do you mean by mutators?->c)Setter functions
+14.	Which of following methods are used in database migrations classes?->b)up() and down()
+15.	How can you create model in laravel?->c) php artisan make:model [ModelName]
+16.	What do you mean by Laravel Elixir?->a)An easy solution for compiling laravel project*
+17.	What is the extension of view files in Laravel?->d).blade.php
+18.	Which middleware is used to manage CSRF protection?->a)VerifyCsrfToken.php
+19.	Where we get controller files in laravel?->b)App/Http/controllers
+20.	How can we set any service specific settings?->b)services.php*
+21.	The abbreviation of CSRF is:->d)Cross-Site Request Forgery
+22.	What is the abbreviation of ORM in laraval?->d)Object-Relational Mapping
+24.	Which mechanism is used in Laravel Elixir to change database structure?->b) migration
+25.	Which directory  contain robot.txt file?->d) public
+26.	How can you edit a record in RESTful service?->c) put
+27.	What do you mean by Heroku?->a) cloud based hosting solution
+28.	Which property is used to identify columns that should not be passed into json or array?->b) $hidden
+29.	Where do we need to set database connection in laravel?->b) .ENV file
+30.	Laravel support which of the following design pattern?-> d) MVC design pattern
+31.	How to set a session data in laravel?->a) $request->session()->put(‘key’,’value’)
+32.	Which of the following is not RESTful method?->imran21
+34.	Which function is used to get all records from item table?->d) result=DB::table(‘item’)->get();
+35.	What do the .env is used for?-> c) for setting environment variables
+36.	Which is used in laravel to prevent malicious user?->  $fillable (in question have $filliable, $filable right ans: not given)
+37.	what do you mean by Artisan?->b) command line interface
+38.	which of the following is the location of Middleware?->a) app/Http/Middleware
+39.	which file configure the application URL, timezone, locale autoload service provider?->a) app.php
+40.	which is the correct path to save models in the laravel?->4) App/
+41. which of the following is false?-> c) @yield directive identifies the id of the section
+42. which is the default location of your project's view?->c) view.php
+42. which middleware is used to confirm a user is not signed in to the application. If so, the user is redirected to the home page?->c) RedirectIfAuthenticated.php
+43. How can we get all routes?-> a)php artisan route:list
+43. Todolist::take(5)->skip(10)->orderBy('id', asc)->get() means->a) Select first 5 records after skipping 10 records
+44. what is HTTP status Code?-> c)604*
+45. what is the function of dd()?-> c) helper function
+46. which file is used to configure third-party service such as Mandrill for e-mail delivery?-> a) services.php
+47. How many types of middleware in laravel?->c) 2*
+48. which file is used to verify a user?->d)Authenticated.php*
+49. What is the purpose of composer.lock?-> a)It is used to contain information about the state of the installed composer package at the time these packages were last installed and/or updated
+50. what is blade in laraval?-> b) A template Engine
+51. what do you mean by keyword 'Has Many' means-> b)one to many relationship
+52. Which command is used to start PHP’s built-in development server?->b) php artisan serve
+53. which directive is used to embed the section into a template?-> a) @yield
+54. what purpose of laravel forge in laravel-> a)conjunction with another hosting service
+55. How to get IP address in laravel?-> a)$request->ip();
+56. which function is used to find out current route name?-> request()->route->getName()*(according to sir provided solution)
+57. Which artisan CLI command is used to update your project’s namespace?->d) php artisan app:name my_project
+58. which method is used to modify the valu of attribute in laravel?->c) mutator
+59. which of the following is not correct?-> b) return view('home')->with($city, 'city');
+60. which of the following is true to make a migration in laravel?-> c) php artisan migrate
+61. How can we navigate link?-> c)Pagination
+62. which option do you have to change to manage cache and session data in laravel?->a) radis
+63. how can you cache clear using artisan command?-> d) $ php artisan route: clear
+64. which file is required for user authentication?->d) auth.php
