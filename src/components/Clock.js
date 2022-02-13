@@ -25,14 +25,19 @@ class Clock extends React.Component{
   }
     render(){
       console.log('clock com');
-      const {date, local} = this.state;
+      let {date, local} = this.state;
       return (
         <div>
           <h1 className='heading'>
             Hello Worlds -{this.props.children}
             <span>{date.toLocaleTimeString(local)}</span>
           </h1>
-          <Button change={this.handleClick} local='en-US'>Change</Button>
+          {
+          local==='en-US' ? (<Button change={this.handleClick} local='bn-BD' show />)
+                          : (<Button change={this.handleClick} local='en-US' show={false} enable />)
+          
+          }
+          
         </div>
         );
   }

@@ -11,10 +11,15 @@ export class Button extends React.Component {
     return true;
   }
   render() {
-    console.log('button com');
-    const {change, local}=this.props;
+    const {change, local, show, enable}=this.props;
+    if (!enable) return null;
     return (
-      <button type='button' onClick={()=>change(local)}>Click Here</button>
+      <>
+        <button type='button' onClick={()=>change(local)}>
+          { local==='bn-BD' ? 'Change here': 'পরিবর্তন করুন'}
+        </button>
+          {show && <p>Hello</p> }
+      </>
     )
   }
 }
