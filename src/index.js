@@ -20,8 +20,8 @@ import reportWebVitals from './reportWebVitals';
 
  ReactDom.render(
   <React.StrictMode>
-    <App />
     <Form/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
  );
