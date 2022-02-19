@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './App';
-import Form from './components/Form';
 import reportWebVitals from './reportWebVitals';
 
 // const element =React.createElement('h1',{className:'heading'},'Hello, world');
@@ -20,7 +19,6 @@ import reportWebVitals from './reportWebVitals';
 
  ReactDom.render(
   <React.StrictMode>
-    <Form/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
