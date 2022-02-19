@@ -1,8 +1,10 @@
 import './App.css';
+import ClickCounter from './components/clickcounter/ClickCounter';
+import HoverCounter from './components/clickcounter/HoverCounter';
 import ClockList from './components/ClockList';
+import Bracket from './components/composition/Bracket';
 import Emoji from './components/composition/Emoji';
 import Text from './components/composition/Text';
-import Bracket from './components/composition/Bracket';
 import Form from './components/Form';
 // import Text from './components/inheritance/Text';
 import Calculator from './components/TemCal/Calculator';
@@ -22,6 +24,8 @@ function App() {
          )}
          </Emoji>
          {/* <Text/> */}
+         <ClickCounter/>
+         <HoverCounter/>
         </>
     );
 }
