@@ -18,18 +18,19 @@ import Calculator from './components/TemCal/Calculator';
 export default class App extends React.Component {
     state ={
         theme:'dark',
+        switchTheme: ()=>{
+            this.setState(({theme})=>{
+                if (theme==='dark') {
+                    return {theme:'light'}
+                }
+                return{theme:'dark'}
+            })
+        },
     }
-    switchTheme=()=>{
-        this.setState(({theme})=>{
-            if (theme==='dark') {
-                return {theme:'light'}
-            }
-            return{theme:'dark'}
-        })
-    }
+    
     render(){
         const quantities=[1,2,3];
-        const {theme} =this.state;
+        
         return (
             <>
              <ClockList quantities={quantities}/>
@@ -56,7 +57,7 @@ export default class App extends React.Component {
                         )}
                 </Counter>
 
-                <ThemeContext.Provider value={{theme, switchTheme: this.switchTheme}}>
+                <ThemeContext.Provider value={this.state}>
                     <Section/>
                 </ThemeContext.Provider>
             </>
