@@ -14,6 +14,8 @@ import Counter from './components/renderprops/Counter';
 import HoverCounter2 from './components/renderprops/HoverCounter';
 // import Text from './components/inheritance/Text';
 import Calculator from './components/TemCal/Calculator';
+import SetCounter from './hook/SetCounter';
+import Todo from './hook/Todo';
 
 export default class App extends React.Component {
     state ={
@@ -60,6 +62,8 @@ export default class App extends React.Component {
                 <ThemeContext.Provider value={this.state}>
                     <Section/>
                 </ThemeContext.Provider>
+                <Todo/>
+                <SetCounter/>
             </>
         );
     }
