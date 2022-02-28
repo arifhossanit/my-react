@@ -17,6 +17,7 @@ import Calculator from './components/TemCal/Calculator';
 import MyComponent from './hook/MyComponent';
 import SetCounter from './hook/SetCounter';
 import Todo from './hook/Todo';
+import Form2 from './hook/Use_ref/Form';
 
 export default class App extends React.Component {
     state ={
@@ -79,6 +80,9 @@ export default class App extends React.Component {
                     </button>
                     
                 </div>
+
+                {/* useRef hook */}
+                <Form2/>
             </>
         );
     }
