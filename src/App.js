@@ -14,6 +14,7 @@ import Counter from './components/renderprops/Counter';
 import HoverCounter2 from './components/renderprops/HoverCounter';
 // import Text from './components/inheritance/Text';
 import Calculator from './components/TemCal/Calculator';
+import MyComponent from './hook/MyComponent';
 import SetCounter from './hook/SetCounter';
 import Todo from './hook/Todo';
 
@@ -28,8 +29,14 @@ export default class App extends React.Component {
                 return{theme:'dark'}
             })
         },
+        show: true,
     }
     
+    setShow=()=>{
+        this.setState((state,props)=>({
+            show: !state.show
+        }))
+    }
     render(){
         const quantities=[1,2,3];
         
@@ -64,6 +71,14 @@ export default class App extends React.Component {
                 </ThemeContext.Provider>
                 <Todo/>
                 <SetCounter/>
+
+                <div>{this.state.show && <MyComponent/>}</div>
+                <div>
+                    <button type='button' onClick={this.setShow}>
+                        {this.state.show ?'hide':'show'}
+                    </button>
+                    
+                </div>
             </>
         );
     }

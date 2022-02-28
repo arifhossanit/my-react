@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Counter extends React.Component {
+export class Counter3 extends React.Component {
     state ={
         count:0,
     };
@@ -17,4 +17,4 @@ export class Counter extends React.Component {
   }
 }
 
-export default Counter
+export default Counter3
