@@ -18,6 +18,8 @@ import MyComponent from './hook/MyComponent';
 import SetCounter from './hook/SetCounter';
 import Todo from './hook/Todo';
 import Form2 from './hook/Use_ref/Form';
+import './style/global.css';
+import InlineStyle from './style/InlineStyle';
 
 export default class App extends React.Component {
     state ={
@@ -83,6 +85,7 @@ export default class App extends React.Component {
 
                 {/* useRef hook */}
                 <Form2/>
+                <InlineStyle className="bg"/>
             </>
         );
     }
