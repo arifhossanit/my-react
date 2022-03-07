@@ -87,6 +87,7 @@ export default class App extends React.Component {
                 <Form2/>
                 <InlineStyle className="bg"/>
             </>
+            
         );
     }
     

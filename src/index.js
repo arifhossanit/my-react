@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RouteApp from './route/RouteApp';
 
 // const element =React.createElement('h1',{className:'heading'},'Hello, world');
 // function Clock({local}){
@@ -19,7 +19,8 @@ import reportWebVitals from './reportWebVitals';
 
  ReactDom.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <RouteApp />
   </React.StrictMode>,
   document.getElementById('root')
  );
